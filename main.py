@@ -16,7 +16,7 @@ from app.files_utils import (
 )
 from app.vectorstore_utils import create_faiss_index, retrive_relevant_docs
 from app.chat_utils import get_chat_model, ask_chat_model
-from langchain.text_splitter import RecursiveCharacterTextSplitter
+from langchain_text_splitters import RecursiveCharacterTextSplitter
 
 # Securely load API key
 EURI_API_KEY = st.secrets.get("EURI_API_KEY") or os.getenv("EURI_API_KEY")
