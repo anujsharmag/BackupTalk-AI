@@ -5,8 +5,7 @@ torch
 pandas
 numpy
 matplotlib
+pypdf
 PyMuPDF
 openpyxl
 python-docx
-
-
