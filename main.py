@@ -1,20 +1,26 @@
-import streamlit as st
-from app.ui import pdf_uploader
-from app.files_utils import extract_text_from_pdf , extract_text_from_csv, extract_text_from_docx, extract_text_from_excel,extract_text_from_txt
-from app.vectorstore_utils import create_faiss_index,retrive_relevant_docs
-from app.chat_utils import get_chat_model, ask_chat_model
-#from app.config import EURI_API_KEY
-from langchain.text_splitter import RecursiveCharacterTextSplitter
+import os
 import time
+import re
+import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
-import numpy as np
-import re
-import os
 import streamlit as st
 
-# Try to load key from Streamlit secrets (for deployment)
+from app.ui import pdf_uploader
+from app.files_utils import (
+    extract_text_from_pdf,
+    extract_text_from_csv,
+    extract_text_from_docx,
+    extract_text_from_excel,
+    extract_text_from_txt
+)
+from app.vectorstore_utils import create_faiss_index, retrive_relevant_docs
+from app.chat_utils import get_chat_model, ask_chat_model
+from langchain.text_splitter import RecursiveCharacterTextSplitter
+
+# Securely load API key
 EURI_API_KEY = st.secrets.get("EURI_API_KEY") or os.getenv("EURI_API_KEY")
+
 
 
 
