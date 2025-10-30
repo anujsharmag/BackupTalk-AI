@@ -1,0 +1,15 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.env
+.vscode/
+.idea/
+.DS_Store
+
+# Config & Secrets
+app/config.py
+
+# Streamlit & Logs
+.streamlit/
+logs/
