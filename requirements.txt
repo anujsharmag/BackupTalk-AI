@@ -11,3 +11,4 @@ PyMuPDF
 openpyxl
 python-docx
 euriai
+langchain-text-splitters
