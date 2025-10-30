@@ -10,3 +10,4 @@ pypdf
 PyMuPDF
 openpyxl
 python-docx
+euriai
