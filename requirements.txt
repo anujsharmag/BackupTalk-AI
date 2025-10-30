@@ -1,11 +1,12 @@
 streamlit
-fpdf
-pypdf
-faiss-cpu
 langchain
-euriai 
-langchain_community
-sentence-transformers
+faiss-cpu
+torch
 pandas
-openpyxl   # for Excel
+numpy
+matplotlib
+PyMuPDF
+openpyxl
 python-docx
+
+
